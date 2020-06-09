@@ -79,6 +79,7 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+node_modules/
 .DS_Store
 dist/
 data/
