@@ -1,4 +1,4 @@
-# Bigbang Gdragon Images Crawler
+# Gdragon Images Crawler
 
 ## Setup
 ```
