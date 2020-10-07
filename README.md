@@ -4,8 +4,6 @@
 ```
 npm i
 ```
-to install all dependencies
-
 ## Run the script
 ```
 npm run gdragon
