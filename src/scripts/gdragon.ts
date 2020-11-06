@@ -24,6 +24,11 @@ const buildRequestOptions = (page: any) => {
 (async () => {
   try {
     const maxPage = 184;
+
+    const dir = __dirname + '/../output';
+
+    fs.mkdir(dir);
+    
     for (let index = 1; index <= maxPage; index++) {
       const options = buildRequestOptions(index);
       const body = await request(options);
@@ -33,6 +38,7 @@ const buildRequestOptions = (page: any) => {
         const b = ($('.posts > a', elem)).attr('onclick');
         const highRes = b.split('high_res: \'')[1].split('\' }])')[0];
         const buffer = await downloadFile(highRes);
+        
         const path = __dirname + `/../output/${uuidv4()}.jpg`;
         await fs.writeFile(path, buffer)
       })

@@ -11,4 +11,4 @@ npm run gdragon
 to get ~2k HQ images of Bigbang's leader
  
 Make sure to create `output` folder inside `src` folder.
-All images will be saved in these^^
+All images will be saved there^^
